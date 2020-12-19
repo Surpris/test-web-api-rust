@@ -15,6 +15,6 @@ edition = "2018"
 [workspace]
 members = [
     "graphql_server",
-    "grpc_book_server",
+    "grpc_hello_server",
     "jsonapi_music_server",
 ]
