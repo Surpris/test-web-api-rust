@@ -1,6 +1,8 @@
-//! gRPC Book Server
+//! gRPC Hello Server
 //! 
-//! Backend server for a book library using gRPC
+//! Backend server using gRPC
+//! 
+//! Reference: https://qiita.com/watawuwu/items/114e2674736e44d4b16d
 
 use tonic::{transport::Server, Request, Response, Status};
 
@@ -17,17 +19,21 @@ pub struct MyGreeter {}
 
 #[tonic::async_trait]
 impl Greeter for MyGreeter {
+    // Return an instance of type HelloReply
     async fn say_hello(
         &self,
-        request: Request<HelloRequest>, // Accept request of type HelloRequest
-    ) -> Result<Response<HelloReply>, Status> { // Return an instance of type HelloReply
+        // Accept request of type HelloRequest
+        request: Request<HelloRequest>, 
+    ) -> Result<Response<HelloReply>, Status> { 
         println!("Got a request: {:?}", request);
 
         let reply = HelloReply {
-            message: format!("Hello {}!", request.into_inner().name).into(), // We must use .into_inner() as the fields of gRPC requests and responses are private
+            // We must use .into_inner() as the fields of gRPC requests and responses are private
+            message: format!("Hello {}!", request.into_inner().name).into(), 
         };
 
-        Ok(Response::new(reply)) // Send back our formatted greeting
+        // Send back our formatted greeting
+        Ok(Response::new(reply)) 
     }
 }
 

@@ -1,6 +1,8 @@
 //! gRPC Hello Client
 //! 
 //! Client for a hello server using gRPC
+//! 
+//! Reference: https://qiita.com/watawuwu/items/114e2674736e44d4b16d
 
 pub mod hello_server {
     tonic::include_proto!("hello_server");

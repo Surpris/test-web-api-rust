@@ -16,5 +16,5 @@ edition = "2018"
 members = [
     "graphql_server",
     "grpc_hello_server",
-    "jsonapi_music_server",
+    "rest_hello_server",
 ]
