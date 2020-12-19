@@ -8,3 +8,6 @@ edition = "2018"
 
 [dependencies]
 actix-web = "3.3.2"
+jsonapi = "0.7.0"
+juniper = "0.15.0"
+tonic = "0.3.1"
