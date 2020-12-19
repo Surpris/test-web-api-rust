@@ -1,6 +1,8 @@
 //! GraphQL Server
 //!
 //! Intermediate server using GraphQL
+//! 
+//! Reference: https://github.com/actix/examples/blob/master/juniper/src/main.rs
 
 use std::io;
 use std::sync::Arc;

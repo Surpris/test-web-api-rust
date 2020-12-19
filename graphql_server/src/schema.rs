@@ -1,6 +1,8 @@
 //! GraphQL schema
 //! 
-//! Scheme
+//! Schema
+//! 
+//! Reference: https://github.com/actix/examples/blob/master/juniper/src/schema.rs
 
 use juniper::FieldResult;
 use juniper::RootNode;
