@@ -1,3 +1,3 @@
-//! jsonapi_music_server
+//! JSON:API Music Server
 //!
 //! End server for a music library using JSON:API

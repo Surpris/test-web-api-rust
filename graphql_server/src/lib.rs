@@ -1,3 +1,3 @@
-//! graphql_server
+//! GraphQL Server
 //!
 //! Intermediate server using GraphQL

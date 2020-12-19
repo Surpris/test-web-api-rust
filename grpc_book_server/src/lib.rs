@@ -1,3 +1,3 @@
-//! grpc_book_server
+//! gRPC Book Server
 //!
 //! End server for a book library using gRPC
